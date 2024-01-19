@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  captcha_server:
+    build:
+      context: .
+      dockerfile: captcha_server/Dockerfile
+    ports:
+      - "8000:8000"
+    networks:
+      - mynetwork
+    volumes:
+      - ./sample_data:/numbers_captcha/sample_data   # Change these paths accordingly
+
+  captcha_ui:
+    build:
+      context: .
+      dockerfile: captcha_UI/Dockerfile
+    environment:
+      - API_URL=http://captcha_server:8000
+    ports:
+      - "8501:8501"
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge

@@ -1,0 +1,15 @@
+{
+    "base_model_0500.pt": {
+      "f1": 0.85,
+      "accuracy": 0.90
+    },
+    "base_model_0800.pt": {
+      "f1": 0.87,
+      "accuracy": 0.94
+    },
+    "model_checkpoint_AIAP_annotated": {
+      "f1": 0.95,
+      "accuracy": 0.98
+    }
+  }
+  

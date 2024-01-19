@@ -1,0 +1,13 @@
+{
+      "images": [
+        "./assets/images/dummy_320x32.jpg",
+        "./assets/images/dummy_320x32.jpg",
+        "./assets/images/dummy_320x32.jpg",
+        "./assets/images/dummy_320x32.jpg",
+        "./assets/images/dummy_320x32.jpg"
+      ],
+      "base_model_predictions": ["1234567890", "1234567890", "1234567890", "1234567890", "1234567890"],
+      "new_model_predictions": ["9876543210", "9876543210", "9876543210", "9876543210", "9876543210"]
+    
+}
+  
